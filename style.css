@@ -18,22 +18,13 @@
 }
 
 .conteiner {
-  position: relative;
   font-family: 'OpenSans', serif;
   width: 1660px;
   margin: 0 auto;
-  z-index: -1;
-}
-
-.conteiner::after {
-  content: "";
-  position: absolute;
-  background-color: #000000;
-  opacity: 0.45;
-  z-index: 2;
 }
 
 .banner {
+  position: relative;
   height: 449px;
   background-color: slategrey;
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
@@ -41,9 +32,23 @@
   border: solid 1px #000000;
 }
 
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.45;
+  z-index:1;
+}
+
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 3;
 }
 
 .logo {
