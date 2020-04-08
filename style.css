@@ -30,6 +30,7 @@
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
   background-repeat: no-repeat;
   border: solid 1px #000000;
+  z-index: -2;
 }
 
 .banner::after {
@@ -41,14 +42,12 @@
   bottom: 0;
   background-color: #000000;
   opacity: 0.45;
-  z-index:1;
+  z-index: -1;
 }
 
 .header {
-  position: relative;
   display: flex;
   justify-content: space-between;
-  z-index: 3;
 }
 
 .logo {
@@ -84,8 +83,6 @@
 }
 
 .header-text {
-  position: relative;
-  z-index: 3;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
