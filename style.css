@@ -30,7 +30,6 @@
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
   background-repeat: no-repeat;
   border: solid 1px #000000;
-  z-index: -2;
 }
 
 .banner::after {
@@ -42,12 +41,14 @@
   bottom: 0;
   background-color: #000000;
   opacity: 0.45;
-  z-index: -1;
+  z-index: 1;
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .logo {
@@ -83,6 +84,8 @@
 }
 
 .header-text {
+  position: relative;
+  z-index: 2;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
@@ -93,4 +96,70 @@
   margin-top: 125px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.newsboxes {
+  margin-left: 230px;
+  margin-top: 64px;
+}
+
+.news-box {
+  display: flex;
+  margin-left: 16px;
+  margin-bottom: 60px;
+  width: 778px;
+}
+
+.news-box-img {
+  display: block;
+  width: 381px;
+  height: 294px;
+  background-color: #eff6f1;
+}
+
+.news-box-content {
+  margin-left: 30px;
+}
+
+.news-box-category {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #b59f5b;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.news-box-header {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  color: #0f0d0e;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.news-box-meta {
+  display: flex;
+  font-size: 12px;
+  margin-top: 36px;
+  margin-bottom: 51px;
+}
+
+.news-box-date {
+  color: #888888;
+  margin-right: 15px;
+}
+
+.news-box-autor {
+  font-weight: bold;
+  color: #000000;
+}
+
+.news-box-text {
+  width: 363px;
+  font-size: 15px;
+  line-height: 1.47;
+  color: #0f0d0e;
 }
