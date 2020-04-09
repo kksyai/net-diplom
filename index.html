@@ -6,10 +6,9 @@
     <title>Main page</title>
 </head>
 <body>
-      <div class="banner">
-      </div>
 
   <div class="conteiner">
+    <div class="banner">
       <header class="header">
           <img class="logo" src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="noemi-logo">
           <nav class="menu">
@@ -26,6 +25,7 @@
       <div class="header-text">
             Last News about Art, health, lifestyle and more
       </div>
+    </div>
 
       <div class="main-content">
         <main class="newsboxes">
@@ -48,35 +48,50 @@
 
         <section class="sidebar">
           <article class="resent-post">
-            <h5 class="resent-post-title">recent Posts</h5>
+            <h5 class="sidebar-title resent-post-title">recent Posts</h5>
             <div class="resent-post-item">
-              <img src="2https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="Man on the beach" class="recent-post-img">
+              <img src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="Man on the beach" class="recent-post-img">
                 <div class="resent-post-item-content">
                   <div class="recent-post-date">June 14, 2015</div>
-                  <div class="resent-post-item-title">Lorem Ipsum now.</div>
+                  <div class="resent-post-item-title"><a class="resent-post-item-title-link" href="#">Lorem Ipsum now.</a></div>
                 </div>
             </div>
           </article>
 
           <form class="search">
-            <input class="search-field" type="text" name="query" id="" required placeholder="Search..." required>
+            <input class="form-field search-field" type="text" name="query" placeholder="Search..." required>
             <button class="button search-button" type="submit"></button>
           </form>
 
-          <form class="subscribe" action="">
-
+          <form class="subscribe">
+            <h5 class="sidebar-title">NEWSLETTER</h5>
+            <input class="form-field subscribe-field" type="email" name="user-email" placeholder="Your email address" required>
+            <button class="button subscribe-button" type="submit">SUBSCRIBE</button>
           </form> 
 
-          <article class="tags"></article>
+          <article class="tags">
+          <h5 class="sidebar-title">Tags</h5>
+            <ul class="tags-list">
+              <li class="tags-list-item"><a href="#" class="tags-link">Fashion</a></li>
+              <li class="tags-list-item"><a href="#" class="tags-link">MuSiC</a></li>
+              <li class="tags-list-item"><a href="#" class="tags-link">Lorem tag</a></li>
+              <li class="tags-list-item"><a href="#" class="tags-link">tag</a></li>
+              <li class="tags-list-item"><a href="#" class="tags-link">Ipsum tag</a></li>
+              <li class="tags-list-item"><a href="#" class="tags-link">travel</a></li>
+              <li class="tags-list-item"><a href="#" class="tags-link">Fashion</a></li>
+              <li class="tags-list-item"><a href="#" class="tags-link">MuSiC</a></li>
+            </ul>
+          </article>
 
           <article class="categorys">
+            <h5 class="sidebar-title">Categories</h5>
             <ul class="category-list">
-              <li class="category-list-item"><a class="category-link" href="">Beauty</a></li>
-              <li class="category-list-item"><a class="category-link" href="">Health</a></li>
-              <li class="category-list-item"><a class="category-link" href="">Lifestyle</a></li>
-              <li class="category-list-item"><a class="category-link" href="">Music</a></li>
-              <li class="category-list-item"><a class="category-link" href="">Sport</a></li>
-              <li class="category-list-item"><a class="category-link" href="">Yoga</a></li>
+              <li class="category-list-item"><a class="category-link" href="">Beauty <sup class="hoofletters">12</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="">Health <sup class="hoofletters">4</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="">Lifestyle <sup class="hoofletters">145</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="">Music <sup class="hoofletters">28</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="">Sport <sup class="hoofletters">62</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="">Yoga <sup class="hoofletters">8</sup></a></li>
             </ul>
           </article>
 
@@ -84,7 +99,8 @@
         </section>
       </div>
 
-    <footer>
+
+    <footer class="footer">
       <address class="social">
         <ul class="social-list">
           <li class="social-list-item"><a href="#" class="social-icon twitter"><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg" alt="twitter" class="social-img twitter"></a></li>

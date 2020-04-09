@@ -18,15 +18,11 @@
 }
 
 .conteiner {
-  position: relative;
   font-family: 'OpenSans', serif;
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-
 }
 
 /* cстили для футера */
+/*
 .banner {
   position: absolute;
   top: 0;
@@ -41,8 +37,8 @@
   background-size: cover;
   border: solid 1px #000000;
 }
+*/
 
-/*
 .banner {
   position: relative;
   display: flex;
@@ -54,8 +50,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: solid 1px #000000;
+  padding: 0 15px;
 }
-*/
 
 .banner::after {
   content: "";
@@ -74,6 +70,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  width: 1170px;
 
   z-index: 2;
 }
@@ -117,7 +114,7 @@
   text-align: center;
   color: #ffffff;
   width: 735px;
-  margin-top: 125px;
+  margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
 
@@ -128,14 +125,13 @@
 
 .main-content {
   display: flex;
-  padding: 200px 0 70px;
+  justify-content: center;
+  padding: 60px 0 70px;
 }
 
  /* стили для блока с новостями */
 
-.newsboxes {
-  margin-right: 120px;
-}
+
 
 .news-box {
   display: flex;
@@ -197,15 +193,37 @@
 
 /* стили для боковой колонки с Resent News */
 
-.resent-post-title {
+.sidebar {
+  width: 272px;
+  margin-left: 120px;
+}
+.sidebar-title {
   font-size: 14px;
   font-weight: bold;
   color: #0f0d0e;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.resent-post-title {
+
+}
+
+.sidebar-title::after {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  margin-top: 25px;
 }
 
 .resent-post-item {
-  width: 272px;
   display: flex;
 }
 
@@ -220,31 +238,30 @@
 .recent-post-date {
   opacity: 0.54;
   font-size: 12px;
-  line-height: 3.33;
   color: rgba(0, 0, 0, 0.54);
  }
 
-.resent-post-item-title {
+.resent-post-item-title-link {
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.29;
   color: #000000;
   text-transform: uppercase;
+  text-decoration: none;
 }
-
 
 
 /* стили для боковой колонки с поиском */
 
+.search, .subscribe, .tags, .categorys {
+  margin-top: 61px;
+}
+
 .search {
   display: flex;
   justify-content: center;
-  margin: 50px 0;
-
 }
 
-.search-field {
-  width: 223px;
+.form-field {
   height: 48px;
   background-color: #f4f7f6;
   border: 0 solid white;
@@ -253,38 +270,107 @@
   color: rgba(0, 0, 0, 0.54);
 }
 
+/* width: 223px; */
+
 .button {
+  background-color: #b59f5b;
+  border: 0 solid white;
+  cursor: pointer;
+}
+
+.search-button {
   width: 48px;
   height: 48px;
-  background-color: #b59f5b;
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: center center;
-  border: 0 solid white;
 }
 
 .button, .search-field:focus {
   outline: none;
 }
 
-
 /* стили для боковой колонки с подпиской*/
 
+.subscribe-field {
+ margin-bottom: 15px;
+}
+
+.subscribe-button {
+  padding: 19px 98px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
 /* стили для боковой колонки с тегами*/
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags-list-item {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 5px 10px;
+  text-align: center;
+  border: solid 3px #eeeeee;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.tags-list-item:last-child {
+  margin-right: 0;
+}
+
+.tags-link {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0f0d0e;
+  text-transform: uppercase;
+}
 
 /* стили для боковой колонки с категориями*/
 .categorys {
   margin: 50px 0;
 }
 
+.category-list-item {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;;
+}
+
+.category-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hoofletters {
+  font-size: 12px;
+  font-weight: bold;
+  color: #b59f5b;
+}
+
 /* стили для футера */
+
+.footer {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .social {
   background-color: #f4f7f6;
   text-align: center;
   padding: 32px 0;
 }
+
 .social-list {
  display: flex;
  justify-content: center;
@@ -319,3 +405,8 @@
   font-weight: bold;
   color: #999999;
 }
+
+
+/*test*/
+
+
