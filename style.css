@@ -18,19 +18,44 @@
 }
 
 .conteiner {
+  position: relative;
   font-family: 'OpenSans', serif;
-  width: 1660px;
+  width: 1170px;
+  padding: 0 15px;
   margin: 0 auto;
+
 }
 
+/* cстили для футера */
 .banner {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
   height: 449px;
   background-color: slategrey;
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   border: solid 1px #000000;
 }
+
+/*
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 449px;
+  background-color: slategrey;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 1px #000000;
+}
+*/
 
 .banner::after {
   content: "";
@@ -41,6 +66,7 @@
   bottom: 0;
   background-color: #000000;
   opacity: 0.45;
+
   z-index: 1;
 }
 
@@ -48,21 +74,20 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+
   z-index: 2;
 }
 
 .logo {
   width: 179px;
   height: 41px;
-  margin-top: 28px;
-  margin-left: 128px;
+  padding-top: 28px;
 }
 
 .menu {
   font-size: 13px;
   text-transform: uppercase;
-  margin-top: 45px;
-  margin-right: 245px;
+  padding-top: 45px;
 }
 
 .menu-list {
@@ -79,13 +104,12 @@
   text-align: center;
 }
 
-.menu-link:nth-child(-n+6){
-  margin-right: 50px;
+.menu-list-item:nth-child(n+2){
+  margin-left: 38px;
 }
 
 .header-text {
   position: relative;
-  z-index: 2;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
@@ -96,17 +120,25 @@
   margin-top: 125px;
   margin-left: auto;
   margin-right: auto;
+
+  z-index: 2;
 }
 
+/* стили для блока с контентом страницы */
+
+.main-content {
+  display: flex;
+  padding: 200px 0 70px;
+}
+
+ /* стили для блока с новостями */
+
 .newsboxes {
-  margin-left: 230px;
-  margin-top: 64px;
+  margin-right: 120px;
 }
 
 .news-box {
   display: flex;
-  margin-left: 16px;
-  margin-bottom: 60px;
   width: 778px;
 }
 
@@ -124,13 +156,12 @@
 .news-box-category {
   font-size: 14px;
   font-weight: bold;
-  text-align: left;
   color: #b59f5b;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
-.news-box-header {
+.news-box-title {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
@@ -143,8 +174,8 @@
 .news-box-meta {
   display: flex;
   font-size: 12px;
-  margin-top: 36px;
-  margin-bottom: 51px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .news-box-date {
@@ -162,4 +193,129 @@
   font-size: 15px;
   line-height: 1.47;
   color: #0f0d0e;
+}
+
+/* стили для боковой колонки с Resent News */
+
+.resent-post-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0f0d0e;
+  text-transform: uppercase;
+}
+
+.resent-post-item {
+  width: 272px;
+  display: flex;
+}
+
+.recent-post-img {
+  display: block;
+  background-color: #999999;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.recent-post-date {
+  opacity: 0.54;
+  font-size: 12px;
+  line-height: 3.33;
+  color: rgba(0, 0, 0, 0.54);
+ }
+
+.resent-post-item-title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.29;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+
+
+/* стили для боковой колонки с поиском */
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+
+}
+
+.search-field {
+  width: 223px;
+  height: 48px;
+  background-color: #f4f7f6;
+  border: 0 solid white;
+  padding-left: 18px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.button {
+  width: 48px;
+  height: 48px;
+  background-color: #b59f5b;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center center;
+  border: 0 solid white;
+}
+
+.button, .search-field:focus {
+  outline: none;
+}
+
+
+/* стили для боковой колонки с подпиской*/
+
+/* стили для боковой колонки с тегами*/
+
+/* стили для боковой колонки с категориями*/
+.categorys {
+  margin: 50px 0;
+}
+
+/* стили для футера */
+
+.social {
+  background-color: #f4f7f6;
+  text-align: center;
+  padding: 32px 0;
+}
+.social-list {
+ display: flex;
+ justify-content: center;
+}
+
+.social-list-item {
+  list-style: none;
+  margin-right: 28px;
+}
+
+.social-list-item:last-child {
+  margin-right: 0;
+}
+
+.social-icon {
+ text-decoration: none;
+}
+
+.social-img {
+  height: 20px;
+}
+
+.copyright {
+  padding-top: 60px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.copyright a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #999999;
 }
