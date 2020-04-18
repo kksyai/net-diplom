@@ -10,21 +10,19 @@
   <div class="conteiner">
     <div class="banner">
       <header class="header">
-          <img class="logo" src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="noemi-logo">
+          <a href="index.html"><img class="logo" src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="noemi-logo" title="Main page"></a>
           <nav class="menu">
             <ul class="menu-list">
-              <li class="menu-list-item"><a href="0#" class="menu-link">HOME</a></li>
-              <li class="menu-list-item"><a href="0#" class="menu-link">FEATURES</a></li>
-              <li class="menu-list-item"><a href="0#" class="menu-link">posttypes</a></li>
-              <li class="menu-list-item"><a href="0#" class="menu-link">pages</a></li>
-              <li class="menu-list-item"><a href="0#" class="menu-link">categories</a></li>
-              <li class="menu-list-item"><a href="0#" class="menu-link">CONTACT</a></li>
+              <li class="menu-list-item"><a href="#0" class="menu-link">HOME</a></li>
+              <li class="menu-list-item"><a href="#0" class="menu-link">FEATURES</a></li>
+              <li class="menu-list-item"><a href="#0" class="menu-link">posttypes</a></li>
+              <li class="menu-list-item"><a href="#0" class="menu-link">pages</a></li>
+              <li class="menu-list-item"><a href="#0" class="menu-link">categories</a></li>
+              <li class="menu-list-item"><a href="#0" class="menu-link">CONTACT</a></li>
             </ul>
           </nav>
       </header>
-      <div class="header-text">
-            Last News about Art, health, lifestyle and more
-      </div>
+      <h1 class="banner-text">Last News about Art, health, lifestyle and more</h1>
     </div>
 
       <div class="main-content">
@@ -32,16 +30,23 @@
           <article class="news-box">
             <img class="news-box-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Man on the beach">
             <div class="news-box-content">
-              <h5 class="news-box-category">art  Health</h5>
-              <a class="news-box-title" href="#0">Barbecue Party Tips For A Truly Amazing Event</a>
+              <ul class="news-box-category">
+                <li class="news-box-category-list"><a href="#0" class="nwes-box-category-link">art</a></li>
+                <li class="news-box-category-list"><a href="#0" class="nwes-box-category-link">Health</a></li>
+              </ul>
+              <h2>
+                <a class="news-box-title" href="#0">Barbecue Party Tips For A Truly Amazing Event</a>
+              </h2>
               <div class="news-box-meta">
                 <div class="news-box-date"> June 14, 2015</div> 
                 <div class="news-box-autor">by Author Doe</div>
               </div>
-              <p class="news-box-text">Once upon a time, in an age before the Internet, 
-                  the only way to meet people was to leave your home and 
-                  interact with humanity.
-              </p>
+              <div class="news-box-text-box">
+                <p class="news-box-text">Once upon a time, in an age before the Internet, 
+                    the only way to meet people was to leave your home and 
+                    interact with humanity.
+                </p>
+            </div>
             </div>
           </article>
         </main>
@@ -53,66 +58,72 @@
               <img src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="Man on the beach" class="recent-post-img">
                 <div class="resent-post-item-content">
                   <div class="recent-post-date">June 14, 2015</div>
-                  <div class="resent-post-item-title"><a class="resent-post-item-title-link" href="#">Lorem Ipsum now.</a></div>
+                  <div class="resent-post-item-title"><a class="resent-post-item-title-link" href="#0">Lorem Ipsum now.</a></div>
                 </div>
             </div>
           </article>
 
           <form class="search">
-            <input class="form-field search-field" type="text" name="query" placeholder="Search..." required>
+            <label class="search-field">
+              <span class="visually-hidden">Введите текст своего поискового запроса</span>
+              <input class="form-field search-field" type="text" name="query" placeholder="Search..." required>
+            </label>
             <button class="button search-button" type="submit"></button>
           </form>
 
           <form class="subscribe">
             <h5 class="sidebar-title">NEWSLETTER</h5>
-            <input class="form-field subscribe-field" type="email" name="user-email" placeholder="Your email address" required>
+            <label class="subscribe-field">
+              <span class="visually-hidden">Введите адрес своей электронной почты</span>
+              <input class="form-field subscribe-field" type="email" name="user-email" placeholder="Your email address" required>
+            </label>
             <button class="button subscribe-button" type="submit">SUBSCRIBE</button>
           </form> 
 
           <article class="tags">
           <h5 class="sidebar-title">Tags</h5>
             <ul class="tags-list">
-              <li class="tags-list-item"><a href="#" class="tags-link">Fashion</a></li>
-              <li class="tags-list-item"><a href="#" class="tags-link">MuSiC</a></li>
-              <li class="tags-list-item"><a href="#" class="tags-link">Lorem tag</a></li>
-              <li class="tags-list-item"><a href="#" class="tags-link">tag</a></li>
-              <li class="tags-list-item"><a href="#" class="tags-link">Ipsum tag</a></li>
-              <li class="tags-list-item"><a href="#" class="tags-link">travel</a></li>
-              <li class="tags-list-item"><a href="#" class="tags-link">Fashion</a></li>
-              <li class="tags-list-item"><a href="#" class="tags-link">MuSiC</a></li>
+              <li class="tags-list-item"><a href="#0" class="tags-link">Fashion</a></li>
+              <li class="tags-list-item"><a href="#0" class="tags-link">MuSiC</a></li>
+              <li class="tags-list-item"><a href="#0" class="tags-link">Lorem tag</a></li>
+              <li class="tags-list-item"><a href="#0" class="tags-link">tag</a></li>
+              <li class="tags-list-item"><a href="#0" class="tags-link">Ipsum tag</a></li>
+              <li class="tags-list-item"><a href="#0" class="tags-link">travel</a></li>
+              <li class="tags-list-item"><a href="#0" class="tags-link">Fashion</a></li>
+              <li class="tags-list-item"><a href="#0" class="tags-link">MuSiC</a></li>
             </ul>
           </article>
 
           <article class="categorys">
             <h5 class="sidebar-title">Categories</h5>
             <ul class="category-list">
-              <li class="category-list-item"><a class="category-link" href="">Beauty <sup class="hoofletters">12</sup></a></li>
-              <li class="category-list-item"><a class="category-link" href="">Health <sup class="hoofletters">4</sup></a></li>
-              <li class="category-list-item"><a class="category-link" href="">Lifestyle <sup class="hoofletters">145</sup></a></li>
-              <li class="category-list-item"><a class="category-link" href="">Music <sup class="hoofletters">28</sup></a></li>
-              <li class="category-list-item"><a class="category-link" href="">Sport <sup class="hoofletters">62</sup></a></li>
-              <li class="category-list-item"><a class="category-link" href="">Yoga <sup class="hoofletters">8</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="#0">Beauty <sup class="hoofletters">12</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="#0">Health <sup class="hoofletters">4</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="#0">Lifestyle <sup class="hoofletters">145</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="#0">Music <sup class="hoofletters">28</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="#0">Sport <sup class="hoofletters">62</sup></a></li>
+              <li class="category-list-item"><a class="category-link" href="#0">Yoga <sup class="hoofletters">8</sup></a></li>
             </ul>
           </article>
 
-
         </section>
       </div>
+      
+      <footer class="footer">
+        <address class="social">
+          <ul class="social-list">
+            <li class="social-list-item"><a href="#0" class="social-icon twitter"><span class="visually-hidden">twitter</span></a></li>
+            <li class="social-list-item"><a href="#0" class="social-icon pinterest"><span class="visually-hidden">pinterest</span></a></li>
+            <li class="social-list-item"><a href="#0" class="social-icon facebook"> <span class="visually-hidden">facebook</span></a></li>
+            <li class="social-list-item"><a href="#0" class="social-icon instagram"> <span class="visually-hidden">instagram</span></a></li>
+            <li class="social-list-item"><a href="#0" class="social-icon tumbler"> <span class="visually-hidden">tumbler</span></a></li>
+          </ul>
+        </address>
+        <div class="copyright">
+          <a href="#0">Copyright &copy; 2009–2016 City Blog LLC.</a>
+        </div>
+      </footer>
 
-
-    <footer class="footer">
-      <address class="social">
-        <ul class="social-list">
-          <li class="social-list-item"><a href="#" class="social-icon twitter"><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg" alt="twitter" class="social-img twitter"></a></li>
-          <li class="social-list-item"><a href="#" class="social-icon "><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg" alt="pinterest" class="social-img pinterest"></a></li>
-          <li class="social-list-item"><a href="#" class="social-icon "><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg" alt="facebook" class="social-img facebook"></a></li>
-          <li class="social-list-item"><a href="#" class="social-icon "><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg" alt="instagram" class="social-img instagram"></a></li>
-          <li class="social-list-item"><a href="#" class="social-icon "><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg" alt="tumbler" class="social-img tumbler"></a></li>
-        </ul>
-      </address>
-      <div class="copyright"><a href="#">Copyright &copy; 2009–2016 City Blog LLC.</a>
-      </div>
-    </footer>
   </div>
 </body>
 </html>
